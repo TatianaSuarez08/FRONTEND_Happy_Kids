@@ -9,5 +9,4 @@ Este repositorio contiene el desarrollo del frontend de la aplicación, encargad
 - CSS3
 - JavaScript
 - Bootstrap
-- React (si aplica)
-- Node.js (si aplica)
+- React 
