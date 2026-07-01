@@ -1,0 +1,192 @@
+{
+  "tipo_documento": [
+    { "id": 1, "sigla": "CC", "nombre_documento": "Cédula de Ciudadanía", "estado": "Activo" },
+    { "id": 2, "sigla": "TI", "nombre_documento": "Tarjeta de Identidad", "estado": "Activo" },
+    { "id": 3, "sigla": "CE", "nombre_documento": "Cédula de Extranjería", "estado": "Activo" }
+  ],
+
+  "autorizacion": [
+    { "rol": "Administrador" },
+    { "rol": "Odontologo" },
+    { "rol": "Paciente" }
+  ],
+
+  "servicio": [
+    {
+      "id": 1,
+      "nombre": "Limpieza Dental",
+      "descripcion": "Limpieza y profilaxis",
+      "precio_actual": 80000,
+      "duracion": "00:45:00"
+    },
+    {
+      "id": 2,
+      "nombre": "Ortodoncia",
+      "descripcion": "Control de ortodoncia",
+      "precio_actual": 120000,
+      "duracion": "01:00:00"
+    }
+  ],
+
+  "metodo_pago": [
+    { "id": 1, "nombre_metodo": "Efectivo" },
+    { "id": 2, "nombre_metodo": "Nequi" },
+    { "id": 3, "nombre_metodo": "Tarjeta" }
+  ],
+
+  "alergia": [
+    { "id": 1, "nombre": "Penicilina" },
+    { "id": 2, "nombre": "Polen" }
+  ],
+
+  "enfermedad_sistemica": [
+    { "id": 1, "nombre": "Hipertensión" },
+    { "id": 2, "nombre": "Diabetes" }
+  ],
+
+  "cirugia_previa": [
+    { "id": 1, "nombre": "Extracción de cordales" }
+  ],
+
+  "medicamento": [
+    { "id": 1, "nombre": "Ibuprofeno" },
+    { "id": 2, "nombre": "Amoxicilina" }
+  ],
+
+  "usuario": [
+    {
+      "id": 1,
+      "id_tipo_documento": 1,
+      "numero_documento": "123456789",
+      "email": "admin@sicac.com",
+      "password": "123456",
+      "fecha_nacimiento": "1998-05-20",
+      "primer_nombre": "Sergio",
+      "segundo_nombre": "",
+      "primer_apellido": "Lopez",
+      "segundo_apellido": "",
+      "numero_celular": "3001112233",
+      "tipo_sangre": "O+"
+    },
+    {
+      "id": 2,
+      "id_tipo_documento": 1,
+      "numero_documento": "987654321",
+      "email": "odontologo@sicac.com",
+      "password": "123456",
+      "fecha_nacimiento": "1995-01-15",
+      "primer_nombre": "Camilo",
+      "segundo_nombre": "",
+      "primer_apellido": "Perez",
+      "segundo_apellido": "",
+      "numero_celular": "3012223344",
+      "tipo_sangre": "A+"
+    },
+    {
+      "id": 3,
+      "id_tipo_documento": 1,
+      "numero_documento": "456123789",
+      "email": "paciente@sicac.com",
+      "password": "123456",
+      "fecha_nacimiento": "2003-07-10",
+      "primer_nombre": "Juan",
+      "segundo_nombre": "",
+      "primer_apellido": "Gomez",
+      "segundo_apellido": "",
+      "numero_celular": "3023334455",
+      "tipo_sangre": "B+"
+    }
+  ],
+
+  "autorizacion_usuario": [
+    { "id": 1, "rol": "Administrador" },
+    { "id": 2, "rol": "Odontologo" },
+    { "id": 3, "rol": "Paciente" }
+  ],
+
+  "administrador": [
+    { "id": 1 }
+  ],
+
+  "odontologo": [
+    {
+      "id": 2,
+      "registro_profesional": "OD12345",
+      "especialidad": "Ortodoncia"
+    }
+  ],
+
+  "paciente": [
+    {
+      "id": 3,
+      "ocupacion": "Estudiante"
+    }
+  ],
+
+  "mapa_dental": [
+    {
+      "id": 1,
+      "id_paciente": 3
+    }
+  ],
+
+  "pieza_dental": [
+    {
+      "id": 1,
+      "id_mapa_dental": 1,
+      "numero_pieza": 11,
+      "estado": "Sana"
+    }
+  ],
+
+  "historial_medico": [
+    {
+      "id": 1,
+      "id_paciente": 3,
+      "observaciones": "Paciente sin antecedentes importantes."
+    }
+  ],
+
+  "cita": [
+    {
+      "id": 1,
+      "id_paciente": 3,
+      "id_odontologo": 2,
+      "id_servicio": 1,
+      "fecha": "2026-07-10",
+      "hora": "08:00:00",
+      "estado": "Programada"
+    }
+  ],
+
+  "pago": [
+    {
+      "id": 1,
+      "id_cita": 1,
+      "id_metodo_pago": 1,
+      "valor": 80000
+    }
+  ],
+
+  "tratamiento": [
+    {
+      "id": 1,
+      "id_cita": 1,
+      "descripcion": "Limpieza realizada correctamente."
+    }
+  ],
+
+  "historial_alergia": [
+    {
+      "id": 1,
+      "id_historial_medico": 1,
+      "id_alergia": 1
+    }
+  ],
+
+  "historial_enfermedad": [],
+
+  "historial_medicamento": [],
+
+  "historial_cirugia": []
+}
