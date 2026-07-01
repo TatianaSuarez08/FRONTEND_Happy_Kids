@@ -1,0 +1,201 @@
+.home-page {
+  min-height: 100vh;
+  background: #fff8f0;
+  padding-bottom: 3rem;
+}
+
+/* Banner */
+.home-banner {
+  background: linear-gradient(135deg, #ff8c42 0%, #f07a2e 100%);
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 2rem auto;
+  border-radius: 20px;
+}
+
+.home-banner-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.home-banner-sub {
+  color: #ffe0c0;
+  font-size: 15px;
+}
+
+/* Secciones */
+.home-section {
+  max-width: 960px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.home-section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 4px;
+}
+
+.home-section-sub {
+  font-size: 13px;
+  color: #888;
+  margin: 0 0 1rem;
+}
+
+/* Búsqueda */
+.home-search-wrap {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #f0e8e0;
+  border-radius: 12px;
+  padding: 0 16px;
+  height: 48px;
+  gap: 10px;
+  margin-bottom: 1rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.home-search-wrap:focus-within {
+  border-color: #ff8c42;
+  box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.15);
+}
+
+.home-search-icon {
+  font-size: 16px;
+  color: #aaa;
+}
+
+.home-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #1a1a1a;
+  background: transparent;
+}
+
+.home-search-input::placeholder {
+  color: #bbb;
+}
+
+.home-search-clear {
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.15s;
+}
+
+.home-search-clear:hover {
+  color: #555;
+}
+
+/* Sin resultados */
+.home-no-results {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #888;
+}
+
+.home-no-results span {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.home-no-results p {
+  font-size: 15px;
+}
+
+/* Productos - GRID */
+.home-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.home-producto-card {
+  background: #fff;
+  border: 1px solid #f0e8e0;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.15s, transform 0.1s;
+}
+
+.home-producto-card:hover {
+  box-shadow: 0 4px 20px rgba(255, 140, 66, 0.15);
+  transform: translateY(-2px);
+}
+
+.home-producto-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.home-producto-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-producto-info {
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.home-producto-nombre {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.home-producto-precio {
+  font-size: 14px;
+  color: #ff8c42;
+  font-weight: 600;
+}
+
+.home-producto-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid #ff8c42;
+  color: #ff8c42;
+  font-size: 13px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  width: fit-content;
+}
+
+.home-producto-btn:hover {
+  background: #ff8c42;
+  color: #fff;
+}
+.home-producto-card {
+  animation: fadeUp 0.4s ease both;
+}
+
+.home-producto-card:nth-child(2) { animation-delay: 0.05s; }
+.home-producto-card:nth-child(3) { animation-delay: 0.1s; }
+.home-producto-card:nth-child(4) { animation-delay: 0.15s; }
+.home-producto-card:nth-child(5) { animation-delay: 0.2s; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

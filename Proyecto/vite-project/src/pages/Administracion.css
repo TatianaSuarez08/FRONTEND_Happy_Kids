@@ -1,0 +1,31 @@
+body{
+    background:#f4f6f9;
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.card h3{
+    color:#0d6efd;
+    font-weight:bold;
+}
+
+.card p{
+    color:#555;
+}
+
+.btn{
+    border-radius:10px;
+}
+
+h1{
+    font-size:40px;
+}

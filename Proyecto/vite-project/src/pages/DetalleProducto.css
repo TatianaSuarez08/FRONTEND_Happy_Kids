@@ -1,0 +1,166 @@
+@import "./InicioSesion.css";
+
+.detalle-page {
+  min-height: 100vh;
+  background: #fff8f0;
+  padding: 2rem 1rem;
+}
+
+.detalle-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.detalle-volver {
+  background: none;
+  border: none;
+  color: #ff8c42;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.detalle-volver:hover {
+  text-decoration: underline;
+}
+
+.detalle-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #f0e8e0;
+  overflow: hidden;
+}
+
+.detalle-img-wrap {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.detalle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detalle-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detalle-nombre {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.detalle-precio {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff8c42;
+}
+
+.detalle-descripcion {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.detalle-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detalle-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detalle-tallas {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.detalle-talla {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: #444;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.detalle-talla:hover {
+  border-color: #ff8c42;
+  color: #ff8c42;
+}
+
+.detalle-colores {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.detalle-color {
+  background: #fff3e0;
+  border: 1px solid #ffd0a0;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: #ff8c42;
+}
+
+.detalle-stock {
+  font-size: 14px;
+  color: #3a7d44;
+  font-weight: 500;
+}
+
+.detalle-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.detalle-notfound {
+  text-align: center;
+  padding: 4rem;
+  color: #888;
+}
+
+.detalle-notfound span {
+  font-size: 64px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.btn-favorito-activo {
+  width: 100%;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #ff8c42;
+  background: #fff3e0;
+  color: #ff8c42;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-favorito-activo:hover {
+  background: #ffe0c0;
+}
